@@ -1,0 +1,24 @@
+{
+  "name": "ci4a-webarena-elementx",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
+    "@vueuse/core": "^14.3.0",
+    "dayjs": "^1.11.20",
+    "element-plus": "workspace:*",
+    "lodash-unified": "^1.0.3",
+    "normalize-wheel-es": "^1.2.0",
+    "vue": "^3.5.25"
+  },
+  "devDependencies": {
+    "vite": "7.2.4",
+    "@vitejs/plugin-vue": "6.0.1"
+  }
+}

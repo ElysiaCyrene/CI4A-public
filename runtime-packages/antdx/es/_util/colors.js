@@ -1,0 +1,17 @@
+import { PresetColors } from '../theme/interface';
+const inverseColors = PresetColors.map(color => `${color}-inverse`);
+export const PresetStatusColorTypes = ['success', 'processing', 'error', 'default', 'warning'];
+/**
+ * determine if the color keyword belongs to the `Ant Design` {@link PresetColors}.
+ * @param color color to be judged
+ * @param includeInverse whether to include reversed colors
+ */
+export function isPresetColor(color, includeInverse = true) {
+  if (includeInverse) {
+    return [...inverseColors, ...PresetColors].includes(color);
+  }
+  return PresetColors.includes(color);
+}
+export function isPresetStatusColor(color) {
+  return PresetStatusColorTypes.includes(color);
+}

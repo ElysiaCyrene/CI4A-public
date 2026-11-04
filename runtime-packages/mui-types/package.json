@@ -1,0 +1,23 @@
+{
+  "name": "@mui/types",
+  "version": "9.1.1",
+  "description": "Utility types for Material UI.",
+  "license": "MIT",
+  "author": "MUI Team",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "sideEffects": false,
+  "peerDependencies": {
+    "@types/react": "^17.0.0 || ^18.0.0 || ^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.29.7"
+  }
+}

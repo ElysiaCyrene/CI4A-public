@@ -1,0 +1,38 @@
+{
+  "name": "ci4a-webarena-materialx",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/core-downloads-tracker": "workspace:*",
+    "@mui/icons-material": "workspace:*",
+    "@mui/material": "workspace:*",
+    "@mui/private-theming": "workspace:*",
+    "@mui/styled-engine": "workspace:*",
+    "@mui/system": "workspace:*",
+    "@mui/types": "workspace:*",
+    "@mui/utils": "workspace:*",
+    "@mui/x-date-pickers": "^9.10.1",
+    "@popperjs/core": "^2.11.8",
+    "axios": "^1.18.1",
+    "clsx": "^2.1.1",
+    "csstype": "^3.2.3",
+    "dayjs": "^1.11.21",
+    "prop-types": "^15.8.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-is": "^19.2.7",
+    "react-transition-group": "^4.4.5"
+  },
+  "devDependencies": {
+    "vite": "7.2.4",
+    "@vitejs/plugin-react": "5.1.0"
+  }
+}

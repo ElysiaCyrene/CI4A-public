@@ -1,0 +1,83 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>mui/mui-public//renovate/default"],
+  "schedule": "* 0-4 * * 7",
+  "lockFileMaintenance": {
+    "schedule": "* 0-4 1 * *"
+  },
+  "packageRules": [
+    {
+      "groupName": "Pigment CSS",
+      "matchPackageNames": ["@pigment-css/*"]
+    },
+    {
+      "groupName": "Emotion",
+      "description": "Keep stylis in sync with emotion to avoid duplicated stylis versions in the bundle.",
+      "matchPackageNames": ["@emotion/*", "stylis", "@types/stylis"]
+    },
+    {
+      "groupName": "Font awesome SVG icons",
+      "matchPackageNames": "@fortawesome/*"
+    },
+    {
+      "groupName": "MUI X",
+      "matchPackageNames": ["@mui/x-*"]
+    },
+    {
+      "groupName": "@types/node",
+      "matchPackageNames": ["@types/node"],
+      "allowedVersions": "< 21.0.0"
+    },
+    {
+      "groupName": "nx",
+      "description": "FIXME: Seems to cause never-ending windows builds in CI (e.g. https://github.com/mui/material-ui/actions/runs/16268045027/job/45928292854)",
+      "matchPackageNames": ["nx"],
+      "allowedVersions": "<= 20"
+    },
+    {
+      "groupName": "bundling fixtures",
+      "matchFileNames": ["test/bundling/fixtures/**/package.json"],
+      "schedule": "* * 1 1,7 *"
+    },
+    {
+      "description": "Prevent major version updates of bundler/framework packages in bundling fixtures",
+      "matchFileNames": ["test/bundling/fixtures/**/package.json"],
+      "matchPackageNames": [
+        "esbuild",
+        "gatsby",
+        "next",
+        "rollup",
+        "snowpack",
+        "vite",
+        "webpack",
+        "@types/react**",
+        "react**"
+      ],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
+    },
+    {
+      "groupName": "examples",
+      "matchFileNames": ["examples/**/package.json"],
+      "enabled": false
+    },
+    {
+      "groupName": "envinfo tests",
+      "matchFileNames": ["packages/mui-envinfo/test/package.json"],
+      "matchPackageNames": ["@mui/*"],
+      "enabled": false
+    },
+    {
+      "groupName": "codemod tests",
+      "description": "Prevent renovate from renaming @material-ui/core to @mui/material in the codemod tests.",
+      "matchFileNames": ["packages/mui-codemod/package.json"],
+      "matchPackageNames": ["@material-ui/core"],
+      "enabled": false
+    },
+    {
+      "matchPackageNames": ["mcr.microsoft.com/playwright"],
+      "matchCurrentVersion": "v1.49.1-noble",
+      "enabled": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "ci4a-components-antdx",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "vue": "3.5.25",
+    "ant-design-vue": "workspace:*",
+    "dayjs": "1.11.21"
+  }
+}

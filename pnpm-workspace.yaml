@@ -1,0 +1,6 @@
+packages:
+  - 'runtime-packages/*'
+  - 'WebArenaX'
+  - 'WebArenaX-MaterialX'
+  - 'WebArenaX-ElementX'
+  - 'examples/components/*'

@@ -1,0 +1,9 @@
+{
+  "name": "@mui/core-downloads-tracker",
+  "version": "9.2.0",
+  "description": "Internal package to track number of downloads of our design system libraries.",
+  "license": "MIT",
+  "author": "MUI Team",
+  "main": "./src/index.js",
+  "exports": {}
+}
