@@ -38,6 +38,8 @@ The repository includes implementations across the Vue and React ecosystems:
 
 Each implementation also has a standalone component playground. The three WebArena frontends share a MySQL-backed API. They provide **CI4A-integrated environments for infrastructure-enabled evaluation**; this public release includes five example tasks for exploring the interaction workflow.
 
+The WebArena adaptations in this repository provide only partial reference implementations; they do not include the complete reconstructed environment or task set.
+
 ## Towards a symbiotic Web ecosystem
 
 Our vision is a Web that is as friendly to agents as it is to humans. CI4A aims to make explicit component semantics a reusable part of frontend infrastructure, allowing applications to expose a native, stable interaction channel alongside their human-facing interfaces. We welcome adoption and experimentation across component libraries, applications, and agent runtimes.
